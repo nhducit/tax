@@ -7,8 +7,6 @@ program
   .parse(process.argv);
 var taxedSalary = program.salary - (9 + (program.dependencies || 0) * 3.6);
 
-console.log('Tax for your salary %j is:', program.salary, findTax(taxedSalary));
-
 function findTax(taxedSalary){
   var tax = 0;
   if(taxedSalary <= 5){
@@ -30,6 +28,7 @@ function findTax(taxedSalary){
 }
 
 
+console.log('Tax for your salary %j%s is:', program.salary, program.dependencies ? program.dependencies + ' dependencies' : '' , findTax(taxedSalary));
 
 
 
