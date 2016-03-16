@@ -1,5 +1,7 @@
 # tax
-tim thue thu nhap ca nhan
+Vietnamese personal income tax calculator
+
+formular is get from this website: http://ketoanthienung.com/cach-tinh-thue-thu-nhap-ca-nhan.htm
 
 #usage
 download => npm install => run command:
